@@ -1,0 +1,154 @@
+.app-container {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 120px;
+
+
+  background-color: rgb(247 247 247);
+  /*   
+  font-family: Arial, sans-serif; */
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+  padding-top: 88px;
+}
+
+.testimonial-slider {
+  margin-left: 176px;
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  color: black;
+  /* background: none; */
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.arrow.disabled {
+  cursor: not-allowed;
+}
+
+.arrow.disabled:hover {
+  cursor: not-allowed;
+}
+.left-arrow {
+  left: -58px;
+  /* left: -40px; */
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.arrow.disabled::after {
+  /* content: '✖'; */
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.arrow.disabled:hover::after {
+  display: block;
+}
+
+.right-arrow {
+  right: -57px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* right: 40px;
+  background-color: blue; */
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  /* margin: 0 auto; */
+  height: 285px;
+  margin-left: -230px;
+}
+
+.testimonial-image {
+  /* width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; */
+  width: 248px;
+  height: 324px;
+  border-radius: 4%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonial-text {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.quote {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.position,
+.company {
+  font-size: 14px;
+  color: #777;
+}
+.logo-slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  margin-right: 127px;
+}
+
+.logo {
+  width: 100px; /* Adjust width as needed */
+  transition: transform 300ms ease-in-out;
+}
+
+.logo img {
+  width: 150%;
+  height: auto;
+  max-width: 300%;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
