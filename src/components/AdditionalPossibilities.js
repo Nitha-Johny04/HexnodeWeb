@@ -6,7 +6,6 @@ import power from "./images/power-up-protection-image.webp";
 import SecureApp from "./images/secure-app-ecosystem.webp";
 import easy from "./images/easy-to-use-interface-image.webp";
 
-
 const AdditionalPossibilities = () => {
   const [activeContent, setActiveContent] = useState("effortless");
 
@@ -63,7 +62,9 @@ const AdditionalPossibilities = () => {
           {Object.keys(contentData).map((key) => (
             <div
               key={key}
-              className={`content-item ${activeContent === key ? "active-item" : ""}`}
+              className={`content-item ${
+                activeContent === key ? "active-item" : ""
+              }`}
             >
               <p
                 className={`title ${activeContent === key ? "active" : ""}`}
@@ -73,8 +74,14 @@ const AdditionalPossibilities = () => {
               </p>
               {activeContent === key && (
                 <div className="content-description">
-                  {/* Render Description */}
                   <p>{contentData[key].description}</p>
+                  <a
+                    href="https://www.hexnode.com/mobile-device-management/cloud/signup/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    TRY FOR FREE
+                  </a>
                 </div>
               )}
             </div>
