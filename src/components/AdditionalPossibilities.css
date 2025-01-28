@@ -9,8 +9,7 @@
 .kiosk-content {
   display: flex;
   justify-content: space-between;
-  /* background-color: white;
-} */
+ 
 }
 h2 {
   font-size: 24px; 
@@ -36,7 +35,7 @@ h2 {
 }
 
 .content-item {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .content-item .title {
@@ -60,4 +59,15 @@ h2 {
 
 .content-item.active-item .content-description {
   display: block;
+}
+
+.content-item.active-item .content-description p {
+  color: rgb(51 51 51 );
+  font-size: 20px;
+  margin-right: 45px;
+}
+
+.content-item.active-item .content-description a {
+  color: rgb(221 7 53);
+  text-decoration: none;
 }
